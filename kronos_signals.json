@@ -1,0 +1,296 @@
+{
+  "_meta": {
+    "version": "2.0",
+    "description": "Kronos PPV v17.8.1 + RRG signals for Sector Rotation Agent",
+    "instructions": "Update generated_at and status each morning before 8:30 AM IST. Set status to weekend on Sat/Sun. All factor scores range 0-100. RRG scores range -100 to +100.",
+    "uploader": "Kronos Pine Script -> Python uploader -> PUT to jsonbin.io"
+  },
+
+  "generated_at": "2026-05-08T03:00:00+05:30",
+  "status": "live",
+
+  "rrg": {
+    "top_2_by_score": ["NIFTYMETAL", "NIFTYIT"],
+    "bull_top3": ["NIFTYMETAL", "NIFTYIT", "NIFTYINFRA"],
+    "bear_top3": ["BANKNIFTY", "NIFTYPSUBNK", "NIFTYENERGY"],
+
+    "sectors": {
+
+      "NIFTYAUTO": {
+        "quadrant": "IMPROVING",
+        "tail_direction": "ADVANCING",
+        "rrg_score": 80,
+        "bias": "BULLISH",
+        "rs_ratio": 98.5,
+        "rs_momentum": 102.3
+      },
+
+      "BANKNIFTY": {
+        "quadrant": "WEAKENING",
+        "tail_direction": "RETREATING",
+        "rrg_score": -50,
+        "bias": "BEARISH",
+        "rs_ratio": 101.2,
+        "rs_momentum": 98.4
+      },
+
+      "FINNIFTY": {
+        "quadrant": "WEAKENING",
+        "tail_direction": "RETREATING",
+        "rrg_score": -50,
+        "bias": "BEARISH",
+        "rs_ratio": 100.8,
+        "rs_momentum": 97.9
+      },
+
+      "NIFTYPSUBNK": {
+        "quadrant": "LAGGING",
+        "tail_direction": "RETREATING",
+        "rrg_score": -100,
+        "bias": "BEARISH",
+        "rs_ratio": 96.2,
+        "rs_momentum": 94.1
+      },
+
+      "NIFTYFMCG": {
+        "quadrant": "IMPROVING",
+        "tail_direction": "FLAT",
+        "rrg_score": 40,
+        "bias": "MILD_BULLISH",
+        "rs_ratio": 99.1,
+        "rs_momentum": 100.4
+      },
+
+      "NIFTYIT": {
+        "quadrant": "LEADING",
+        "tail_direction": "ADVANCING",
+        "rrg_score": 100,
+        "bias": "BULLISH",
+        "rs_ratio": 103.4,
+        "rs_momentum": 104.1
+      },
+
+      "NIFTYMETAL": {
+        "quadrant": "LEADING",
+        "tail_direction": "ADVANCING",
+        "rrg_score": 100,
+        "bias": "BULLISH",
+        "rs_ratio": 104.2,
+        "rs_momentum": 105.6
+      },
+
+      "NIFTYPHARMA": {
+        "quadrant": "IMPROVING",
+        "tail_direction": "RETREATING",
+        "rrg_score": 20,
+        "bias": "MILD_BULLISH",
+        "rs_ratio": 98.8,
+        "rs_momentum": 99.6
+      },
+
+      "NIFTYREALTY": {
+        "quadrant": "LAGGING",
+        "tail_direction": "FLAT",
+        "rrg_score": -70,
+        "bias": "BEARISH",
+        "rs_ratio": 95.3,
+        "rs_momentum": 99.8
+      },
+
+      "NIFTYCMDT": {
+        "quadrant": "LAGGING",
+        "tail_direction": "ADVANCING",
+        "rrg_score": -40,
+        "bias": "BEARISH",
+        "rs_ratio": 96.1,
+        "rs_momentum": 101.2
+      },
+
+      "NIFTYCONSUM": {
+        "quadrant": "IMPROVING",
+        "tail_direction": "ADVANCING",
+        "rrg_score": 80,
+        "bias": "BULLISH",
+        "rs_ratio": 99.3,
+        "rs_momentum": 102.1
+      },
+
+      "NIFTYENERGY": {
+        "quadrant": "WEAKENING",
+        "tail_direction": "RETREATING",
+        "rrg_score": -50,
+        "bias": "BEARISH",
+        "rs_ratio": 101.5,
+        "rs_momentum": 97.2
+      },
+
+      "NIFTYINFRA": {
+        "quadrant": "LEADING",
+        "tail_direction": "RETREATING",
+        "rrg_score": 40,
+        "bias": "MILD_BULLISH",
+        "rs_ratio": 102.1,
+        "rs_momentum": 99.3
+      }
+    }
+  },
+
+  "stocks": {
+
+    "_note": "factor_c_score = Kronos volatility signal (0-100). factor_h_score_bull = directional bias for long (0-100). factor_h_score_bear = directional bias for short (0-100). status: live / no_data / fallback.",
+
+    "HDFCBANK":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "ICICIBANK":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "SBIN":          { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "AXISBANK":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "KOTAKBANK":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "BAJFINANCE":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "SHRIRAMFIN":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "BAJAJFINSV":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "HDFCLIFE":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "SBILIFE":       { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "BANDHANBNK":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "BANKBARODA":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "CANBK":         { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "INDUSINDBK":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "PNB":           { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "IDFCFIRSTB":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "FEDERALBNK":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "MUTHOOTFIN":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "CHOLAFIN":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "PFC":           { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "RECLTD":        { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "IRFC":          { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "JIOFIN":        { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "HDFCAMC":       { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "UNIONBANK":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+
+    "BHEL":          { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "HAL":           { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "BEL":           { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "BDL":           { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "SIEMENS":       { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "CGPOWER":       { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "LT":            { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "POLYCAB":       { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "ABB":           { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "CUMMINSIND":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "KAYNES":        { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "SUZLON":        { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "WAAREEENER":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+
+    "INFY":          { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "TCS":           { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "HCLTECH":       { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "WIPRO":         { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "TECHM":         { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "COFORGE":       { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "PERSISTENT":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "MPHASIS":       { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "TATAELXSI":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "KPITTECH":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "OFSS":          { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "LTM":           { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+
+    "SUNPHARMA":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "DRREDDY":       { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "CIPLA":         { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "LUPIN":         { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "AUROPHARMA":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "DIVISLAB":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "TORNTPHARM":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "MANKIND":       { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "MAXHEALTH":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "APOLLOHOSP":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "ZYDUSLIFE":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "ALKEM":         { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "BIOCON":        { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "FORTIS":        { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "GLENMARK":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "LAURUSLABS":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+
+    "MARUTI":        { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "M&M":           { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "TATAMOTORS":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "EICHERMOT":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "BAJAJ-AUTO":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "HEROMOTOCO":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "TVSMOTOR":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "ASHOKLEY":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "BHARATFORG":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "BOSCHLTD":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "MOTHERSON":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "TIINDIA":       { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+
+    "TATASTEEL":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "HINDALCO":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "JSWSTEEL":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "JINDALSTEL":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "SAIL":          { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "NMDC":          { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "VEDL":          { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "COALINDIA":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "ADANIENT":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "HINDZINC":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "NATIONALUM":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+
+    "RELIANCE":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "ONGC":          { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "BPCL":          { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "IOC":           { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "GAIL":          { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "HINDPETRO":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "PETRONET":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+
+    "NTPC":          { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "ADANIPOWER":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "TATAPOWER":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "POWERGRID":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "JSWENERGY":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "ADANIGREEN":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "NHPC":          { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+
+    "HINDUNILVR":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "ITC":           { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "NESTLEIND":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "BRITANNIA":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "DABUR":         { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "MARICO":        { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "TATACONSUM":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "COLPAL":        { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "GODREJCP":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "VBL":           { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "PATANJALI":     { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+
+    "TITAN":         { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "ASIANPAINT":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "DMART":         { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "VOLTAS":        { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "JUBLFOOD":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "NAUKRI":        { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "INDHOTEL":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "TRENT":         { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "DIXON":         { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "BLUESTARCO":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "CROMPTON":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "NYKAA":         { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "SWIGGY":        { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+
+    "DLF":           { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "GODREJPROP":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "LODHA":         { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "OBEROIRLTY":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "PRESTIGE":      { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "PHOENIXLTD":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+
+    "PIDILITIND":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "SRF":           { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "PIIND":         { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "UPL":           { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+
+    "INDIGO":        { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "ADANIPORTS":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "BHARTIARTL":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" },
+    "INDUSTOWER":    { "factor_c_score": 50, "factor_h_score_bull": 50, "factor_h_score_bear": 50, "status": "fallback" }
+  }
+}
