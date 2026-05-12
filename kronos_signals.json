@@ -5,7 +5,7 @@
     "note": "RRG computed at start-work time. Stock C/H scores = fallback until Pine Script export is wired.",
     "uploader": "kronos_updater.py \u2014 triggered by Cowork start work"
   },
-  "generated_at": "2026-05-12T09:57:26+05:30",
+  "generated_at": "2026-05-12T09:59:08+05:30",
   "status": "live",
   "rrg": {
     "top_2_by_score": [
@@ -18,9 +18,9 @@
       "NIFTYMETAL"
     ],
     "bear_top3": [
-      "BANKNIFTY",
-      "NIFTYIT",
-      "NIFTYPSUBNK"
+      "NIFTYPSUBNK",
+      "FINNIFTY",
+      "BANKNIFTY"
     ],
     "sectors": {
       "NIFTYAUTO": {
@@ -28,7 +28,7 @@
         "tail_direction": "ADVANCING",
         "rrg_score": 85,
         "bias": "BULLISH",
-        "rs_ratio": 107.9,
+        "rs_ratio": 108.0,
         "rs_momentum": 100.3
       },
       "BANKNIFTY": {
@@ -40,20 +40,20 @@
         "rs_momentum": 99.8
       },
       "FINNIFTY": {
-        "quadrant": "LAGGING",
-        "tail_direction": "FLAT",
-        "rrg_score": 0,
-        "bias": "NEUTRAL",
-        "rs_ratio": 100.0,
-        "rs_momentum": 100.0
+        "quadrant": "WEAKENING",
+        "tail_direction": "RETREATING",
+        "rrg_score": -40,
+        "bias": "BEARISH",
+        "rs_ratio": 100.7,
+        "rs_momentum": 99.8
       },
       "NIFTYPSUBNK": {
-        "quadrant": "LAGGING",
-        "tail_direction": "FLAT",
-        "rrg_score": 0,
-        "bias": "NEUTRAL",
-        "rs_ratio": 100.0,
-        "rs_momentum": 100.0
+        "quadrant": "WEAKENING",
+        "tail_direction": "RETREATING",
+        "rrg_score": -40,
+        "bias": "BEARISH",
+        "rs_ratio": 108.6,
+        "rs_momentum": 98.9
       },
       "NIFTYFMCG": {
         "quadrant": "LEADING",
@@ -77,7 +77,7 @@
         "rrg_score": 85,
         "bias": "BULLISH",
         "rs_ratio": 128.4,
-        "rs_momentum": 100.6
+        "rs_momentum": 100.5
       },
       "NIFTYPHARMA": {
         "quadrant": "LEADING",
@@ -92,15 +92,15 @@
         "tail_direction": "ADVANCING",
         "rrg_score": 40,
         "bias": "MILD_BULLISH",
-        "rs_ratio": 95.5,
-        "rs_momentum": 100.9
+        "rs_ratio": 95.3,
+        "rs_momentum": 100.8
       },
       "NIFTYCMDT": {
         "quadrant": "LEADING",
         "tail_direction": "ADVANCING",
         "rrg_score": 85,
         "bias": "BULLISH",
-        "rs_ratio": 116.5,
+        "rs_ratio": 116.6,
         "rs_momentum": 100.6
       },
       "NIFTYCONSUM": {
@@ -108,7 +108,7 @@
         "tail_direction": "ADVANCING",
         "rrg_score": 85,
         "bias": "BULLISH",
-        "rs_ratio": 101.8,
+        "rs_ratio": 101.9,
         "rs_momentum": 100.4
       },
       "NIFTYENERGY": {
@@ -116,8 +116,8 @@
         "tail_direction": "ADVANCING",
         "rrg_score": 85,
         "bias": "BULLISH",
-        "rs_ratio": 117.9,
-        "rs_momentum": 100.9
+        "rs_ratio": 118.0,
+        "rs_momentum": 101.0
       },
       "NIFTYINFRA": {
         "quadrant": "LEADING",
